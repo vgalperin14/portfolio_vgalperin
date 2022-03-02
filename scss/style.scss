@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600&display=swap');
+
+
+
+@import "_header";
+@import "_footer";
+@import "_mainIndex";
+@import "_mainFormacion";
+@import "_mainTrabajos";
+@import "_mainSobremi";
+@import "_mainContacto";
+@import "_queries";
+
+
+
+$violeta: #722cc2;
+$violeta-oscuro: #480892;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+

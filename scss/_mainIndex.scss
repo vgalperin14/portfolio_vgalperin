@@ -1,0 +1,52 @@
+.bodyIndex {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/gradient2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .mainIndex__titles {
+        text-align: center;
+        color: aliceblue;
+        margin: 10rem 0 0 7vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 1;
+        .mainIndex__title {
+            font-size: 7vw;
+            font-weight: 600;
+        }
+        .mainIndex__subtitle {
+            font-size: 7vw;
+            font-weight: 300;
+        }
+    }
+    
+    
+    .mainIndex__slides{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mainIndex__image {
+            height: auto;
+            width: 70%;
+        }
+    }
+    
+    
+    .mainIndex__info {
+        width: 30vw;
+        margin: 3vw 0 0 62vw;
+        .mainIndex__paragraph {
+            display: flex;
+            align-items: flex-end;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $violeta-oscuro;
+            hyphens: auto;
+            padding-bottom: 1.8rem;
+            border-bottom: solid 0.8vh $violeta-oscuro;
+        }
+    }
+}
+
+

@@ -1,0 +1,43 @@
+$violeta: #722cc2;
+$violeta-oscuro: #480892;
+
+.bodySobreMi {
+    background-image: url("../img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mainSobreMi {
+        display: flex;
+        flex-direction: column;
+        margin: 10rem 10vw 5vw 10vw;
+
+        .mainSobreMi__title {  
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+        .mainSobreMi__paragraph {
+            font-size: 2rem;
+            font-weight: 200;
+            color: white;
+        }
+
+        .mainSobreMi__paragraph--highlight {
+            display: flex;
+            justify-content: end;
+            text-align: right;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-top: 7vh;
+            color: white;
+            &:hover {
+                transition: all 0.5s;
+                transform: scale(1.1);
+                color: $violeta-oscuro;
+            }
+        }
+    }
+
+}

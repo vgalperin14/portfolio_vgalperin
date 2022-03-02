@@ -1,0 +1,71 @@
+.bodyContacto{
+    background-image: url("../img/gradient2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .mainContacto {
+        display: flex;
+        justify-content: center;
+        margin-top: 17vh;
+
+        .mainContacto__title {
+            font-size: 4vw;
+            font-weight: 600;
+            color: aliceblue;
+            margin-bottom: 1rem;
+        }
+
+        .mainContacto__paragraph{
+            font-size: 2vw;
+            font-weight: 200;
+            color: white;
+            width: 35vw;
+        }
+
+        .mainContacto__form {
+            display: flex;
+            flex-direction: column;
+            width: 35vw;
+
+            .mainContacto__label {
+                font-size: 2vw;
+                color: aliceblue;
+                margin-bottom: 1rem;
+            }
+
+            .mainContacto__input {
+                height: 3rem;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 2rem;
+                padding: 1.8rem 2rem 1.8rem 1rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .mainContacto__textFill {
+                height: 10rem;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 2.2rem;
+                font-family: 'Montserrat', sans-serif;
+                padding: 8px;
+            }
+
+            .mainContacto__button {
+                align-self: flex-end;
+                height: 7.5vh;
+                width: 20vw;
+                border: 9px ridge rgb(66, 14, 163);
+                border-radius: 10px;
+                background-color: #16082c;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 2vw;
+                color: aliceblue;
+            }
+        }
+
+    }
+
+
+}
