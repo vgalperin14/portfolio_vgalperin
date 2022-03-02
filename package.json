@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_vgalperin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgalperin14/portfolio_vgalperin.git"
+  },
+  "author": "Valentina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vgalperin14/portfolio_vgalperin/issues"
+  },
+  "homepage": "https://github.com/vgalperin14/portfolio_vgalperin#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
