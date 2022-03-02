@@ -1,0 +1,281 @@
+
+/*DESKTOP*/
+
+@media screen and (max-width: 1200px) {
+  /*index*/
+
+  .mainIndex__paragraph {
+    font-size: 1.3rem;
+  }
+
+  /*trabajos*/
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .grid__title {
+    margin-top: 1.4rem;
+  }
+
+  .grid__description {
+    font-size: 0.9rem;
+  }
+
+  /*formacion*/
+
+  .mainFormacion__timeline {
+    margin: 8rem 0 5rem 0;
+    width: 75vw;
+  }
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 768px) {
+  /*index*/
+
+  .mainIndex__titles {
+    margin-top: 12vh;
+  }
+
+  .mainIndex__paragraph {
+    font-size: 0.9rem;
+  }
+
+  /*formacion*/
+
+  .mainFormacion__content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+
+  .mainFormacion__title {
+    font-size: 2rem;
+  }
+
+  .mainFormacion__paragraph {
+    font-size: 1rem;
+    width: 60vw;
+  }
+
+  .mainFormacion__images {
+    align-self: center;
+    margin-top: 7vh;
+  }
+
+  .mainFormacion__image {
+    width: 50vw;
+  }
+
+  /*trabajos*/
+
+  .mainTrabajos__title {
+    font-size: 2.5rem;
+  }
+
+  .mainTrabajos__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 9vh;
+  }
+
+  /*sobre mi*/
+
+  .mainSobreMi__title {
+    font-size: 3rem;
+  }
+
+  .mainSobreMi__paragraph {
+    font-size: 1.5rem;
+  }
+
+  .mainSobreMi__paragraph--highlight {
+    font-size: 1.7rem;
+  }
+
+  /*contacto*/
+
+  .mainContacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mainContacto__text {
+    margin: 0 0 5vh 0;
+    text-align: center;
+    width: 69vw;
+  }
+
+  .mainContacto__title {
+    font-size: 2.5rem;
+  }
+
+  .mainContacto__paragraph {
+    width: auto;
+    font-size: 1.2rem;
+  }
+
+  .mainContacto__form {
+    width: 55vw;
+  }
+
+  .mainContacto__label {
+    font-size: 1.2rem;
+  }
+
+  /*footer*/
+
+  .footer__content {
+    font-size: 2vw;
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 480px) {
+  /*index*/
+
+  .mainIndex__title {
+    margin-bottom: 0;
+    font-size: 8.6vw;
+  }
+
+  .mainIndex__subtitle {
+    margin-bottom: 0;
+    font-size: 8.4vw;
+  }
+
+  .mainIndex__info {
+    margin-left: 50vw;
+  }
+
+  .mainIndex__paragraph {
+    width: 45vw;
+    font-size: 0.7rem;
+    margin-top: 2.5vh;
+    padding-bottom: 1em;
+  }
+
+  /*formacion*/
+
+  .mainFormacion__content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+
+  .mainFormacion__title {
+    font-size: 9vw;
+    margin-bottom: 1rem;
+  }
+
+  .mainFormacion__paragraph {
+    font-size: 4vw;
+    width: 70vw;
+    margin-bottom: 4rem;
+  }
+
+  .mainFormacion__images {
+    margin: 0;
+  }
+
+  .mainFormacion__image {
+    width: 70vw;
+    height: auto;
+  }
+
+  .mainFormacion__caption {
+    font-size: 2.5vw;
+    margin-top: 0.5rem;
+  }
+
+  .mainFormacion__timeline {
+    display: none;
+  }
+
+  .mainFormacion__timelineResponsive {
+    display: inline-block;
+    margin: 4rem 0 0 0;
+    width: 70vw;
+    height: auto;
+  }
+
+  /*trabajos*/
+
+  .mainTrabajos__title {
+    font-size: 2rem;
+  }
+
+  .mainTrabajos__subtitle {
+    font-size: 1rem;
+    margin-bottom: 5vh;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .grid__description {
+    font-size: 0.8rem;
+  }
+
+  /*sobre mi*/
+
+  .mainSobreMi {
+    margin-top: 3rem;
+  }
+
+  .mainSobreMi__title {
+    font-size: 9vw;
+    margin-top: 2rem;
+  }
+
+  .mainSobreMi__paragraph {
+    font-size: 5vw;
+    width: 75vw;
+  }
+
+  .mainSobreMi__paragraph--highlight {
+    font-size: 5.5vw;
+    margin-top: 3vh;
+  }
+
+  /*contacto*/
+
+  .mainContacto {
+    margin-top: 8vh;
+  }
+
+  .mainContacto__title {
+    font-size: 8vw;
+  }
+
+  .mainContacto__paragraph {
+    font-size: 4.5vw;
+  }
+
+  .mainContacto__form {
+    width: 70vw;
+  }
+
+  .mainContacto__label {
+    font-size: 4.2vw;
+    margin-bottom: 1vh;
+  }
+
+  /*footer*/
+
+  .footer__content {
+    padding-bottom: 12vh;
+    margin-top: 15vh;
+  }
+
+  .footer__content {
+    font-size: 4vw;
+  }
+}

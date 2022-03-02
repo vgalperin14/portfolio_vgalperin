@@ -1,27 +1,25 @@
-$violeta: #722cc2;
-$violeta-oscuro: #480892;
 
-.navbar{
-    background-color: #cad2c562;
-    .navbar-nav{
-        font-weight: 700;
-    }
-    .navbar-brand:hover{
-        transition: all 0.2s;
-        transform: scale(1.05);
-        }
+.navbar {
+  background-color: $transparencia;
+
+  .navbar-nav {
+    font-weight: 700;
+  }
+
+  .navbar-brand:hover {
+    transition: all 0.2s;
+    transform: scale(1.05);
+  }
 }
-
 
 .header__logo {
-    height: 2vh;
-    width: auto;
-    margin: 0 0 0 0;
+  height: 2vh;
+  width: auto;
+  margin: 0;
 }
 
-
-form .btn:hover{
-    transition: all 0.5s;
-    background-color: $violeta-oscuro;
-    border: solid 1px $violeta;
+form .btn:hover {
+  transition: all 0.5s;
+  background-color: $violeta;
+  border: solid 1px $violeta;
 }
