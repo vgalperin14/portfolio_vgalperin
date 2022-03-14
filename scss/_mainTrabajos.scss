@@ -1,8 +1,6 @@
 
 .bodyTrabajos {
   background-image: $gradiente-oscuro;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .mainTrabajos__title {
@@ -50,15 +48,16 @@
 }
 
 .grid__title {
-  margin-top: 0.7rem;
-  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
   color: white;
+  text-transform: uppercase;
 }
 
 .grid__description {
   width: 90%;
-  margin-top: 0.2rem;
-  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  font-size: 1rem;
   font-weight: 200;
   color: white;
 }

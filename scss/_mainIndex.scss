@@ -1,8 +1,8 @@
 
 .bodyIndex {
-    background-image: $gradiente-claro;
-    background-repeat: no-repeat;
+    background: $gradiente-claro;
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -17,12 +17,12 @@
 }
 
 .mainIndex__title {
-    font-size: 7vw;
+    font-size: $index_title;
     font-weight: 600;
 }
 
 .mainIndex__subtitle {
-    font-size: 7vw;
+    font-size: $index_title - 1;
     font-weight: 300;
 }
 
@@ -54,6 +54,8 @@
     hyphens: auto;
     padding-bottom: 1.8rem;
     border-bottom: solid 0.8vh $violeta;
+    hyphens: none;
 }
+
 
 

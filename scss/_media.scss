@@ -30,6 +30,15 @@
     margin: 8rem 0 5rem 0;
     width: 75vw;
   }
+
+  .mainFormacion__timelineContent h2{
+    font-size: 1.2em;
+  }
+
+  .mainFormacion__timelineContent p{
+    font-size: 1.2em;
+  }
+
 }
 
 /*TABLET*/
@@ -69,6 +78,26 @@
 
   .mainFormacion__image {
     width: 50vw;
+  }
+
+  .mainFormacion__timelineContent h2 {
+    font-size: 1em;
+  }
+
+  .mainFormacion__timelineContent p {
+    font-size: 1em;
+  }
+
+  .mainFormacion__timelineContent {
+    padding: 30px;
+  }
+
+  .left {
+    left: -74px;
+  }
+
+  .mainFormacion__timelineWrapper {
+    width: 66%;
   }
 
   /*trabajos*/
@@ -193,16 +222,23 @@
     margin-top: 0.5rem;
   }
 
-  .mainFormacion__timeline {
-    display: none;
+  
+  .mainFormacion__timelineContent h2 {
+    font-size: 0.9em;
   }
 
-  .mainFormacion__timelineResponsive {
-    display: inline-block;
-    margin: 4rem 0 0 0;
-    width: 70vw;
-    height: auto;
+  .mainFormacion__timelineContent p {
+    font-size: 0.8em;
   }
+
+  .mainFormacion__timelineContent {
+    padding: 15px;
+  }
+
+  .mainFormacion__timelineWrapper {
+    width: 75%;
+  }
+
 
   /*trabajos*/
 
@@ -220,9 +256,16 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
+  .grid img {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   .grid__description {
     font-size: 0.8rem;
   }
+
 
   /*sobre mi*/
 

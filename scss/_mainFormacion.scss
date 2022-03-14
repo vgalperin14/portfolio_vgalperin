@@ -1,8 +1,6 @@
 
 .bodyFormacion {
-  background-image: $gradiente-oscuro;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: $gradiente-oscuro;
 }
 
 .mainFormacion {
@@ -50,12 +48,117 @@
   color: white;
 }
 
-.mainFormacion__timeline {
-  margin: 12vh 0 0 0;
-  width: 78vw;
-  height: auto;
+.mainFormacion__timeline{
+  position: relative;
+  margin-top: 10vh;
+  width: 80vw;
 }
 
-.mainFormacion__timelineResponsive {
-  display: none;
+
+/*timeline*/
+
+.mainFormacion__timeline::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-color: aliceblue;
+  top:0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.mainFormacion__timelineWrapper{
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+  word-wrap: break-word;
+  &:hover {
+    transition: all 0.5s;
+    transform: scale(1.03);
+    z-index: 1;
+  }
+}
+
+
+.mainFormacion__timelineWrapper::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 1px;
+  background-color: $violeta ;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: none;
+}
+
+.left{
+  left: 0;
+}
+
+.right{
+  left:50%;
+}
+
+.right::after{
+  left:-10px;
+}
+
+.mainFormacion__timelineContent{
+  padding: 50px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.mainFormacion__timelineContent h2{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: $violeta;
+  letter-spacing: 1px;
+}
+
+.mainFormacion__timelineContent p{
+  color: $violeta;
+  font-size: 1.7em;
+  margin-top: 0.7em;
+}
+
+
+// maps y extend
+
+$timelineWrappers: ( 
+  first: $lila,
+  second:  $violeta-claro,
+  third: $violeta,
+  fourth: $violeta-oscuro
+);
+
+.timeline__titles {
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+@each $timelineWrapper, $color in $timelineWrappers {
+  &:hover.h2--#{$timelineWrapper} {
+    color: $color;
+    @extend .timeline__titles;
+  }
+}
+
+// mixins
+
+@mixin sizes($padding, $color, $border) {
+  padding: $padding;
+  background-color: $color;
+  border-radius: $border;
+}
+
+.mainFormacion__timelineContent {
+  @include sizes(50px, white, 4px);
 }

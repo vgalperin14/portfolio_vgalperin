@@ -1,8 +1,6 @@
 
 .bodyContacto {
   background-image: $gradiente-claro;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .mainContacto {
@@ -11,24 +9,28 @@
   margin-top: 17vh;
 }
 
+// utilización de map-get
+
 .mainContacto__title {
   font-size: 4vw;
   font-weight: 600;
-  color: aliceblue;
-  margin-bottom: 1rem;
+  color: map-get($timelineWrappers, fourth);
+  margin: 0 4vw 1rem 0;
 }
 
 .mainContacto__paragraph {
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-weight: 200;
   color: white;
-  width: 35vw;
+  width: 25vw;
+  margin: 0 4vw 0 0;
 }
 
 .mainContacto__form {
   display: flex;
   flex-direction: column;
   width: 35vw;
+  margin-left: 2vw;
 }
 
 .mainContacto__label {

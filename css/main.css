@@ -5,10 +5,12 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .navbar {
-  background-color: #cad2c562; }
+  background-color: rgba(253, 253, 253, 0.384); }
   .navbar .navbar-nav {
     font-weight: 700; }
   .navbar .navbar-brand:hover {
@@ -16,19 +18,19 @@ body {
     transform: scale(1.05); }
 
 .header__logo {
-  height: 2vh;
+  height: 2.5vh;
   width: auto;
-  margin: 0; }
+  margin: 0 0 4px 0; }
 
 form .btn:hover {
   transition: all 0.5s;
-  background-color: #480892;
-  border: solid 1px #480892; }
+  background-color: #430986;
+  border: solid 1px #430986; }
 
 .bodyIndex {
-  background-image: url("../img/gradient2.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(56deg, #27046c 0%, #3b0e9c 14%, #5b26a6 32%, #8747d5 53%, #bb5fa8 70%, #d18cb9 89%, #d9cdd9 100%);
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif; }
 
 .mainIndex__titles {
@@ -45,7 +47,7 @@ form .btn:hover {
   font-weight: 600; }
 
 .mainIndex__subtitle {
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: 300; }
 
 .mainIndex__slides {
@@ -65,15 +67,14 @@ form .btn:hover {
   align-items: flex-end;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #480892;
+  color: #430986;
   hyphens: auto;
   padding-bottom: 1.8rem;
-  border-bottom: solid 0.8vh #480892; }
+  border-bottom: solid 0.8vh #430986;
+  hyphens: none; }
 
 .bodyFormacion {
-  background-image: url("../img/gradient.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: linear-gradient(165deg, #380a94 0%, #5b26a6 20%, #6a1cd6 34%, #8747d5 50%, #bb5fa8 70%, #d18cb9 89%, #d9cdd9 100%); }
 
 .mainFormacion {
   display: flex;
@@ -114,17 +115,93 @@ form .btn:hover {
   color: white; }
 
 .mainFormacion__timeline {
-  margin: 12vh 0 0 0;
-  width: 78vw;
-  height: auto; }
+  position: relative;
+  margin-top: 10vh;
+  width: 80vw; }
 
-.mainFormacion__timelineResponsive {
-  display: none; }
+/*timeline*/
+.mainFormacion__timeline::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-color: aliceblue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; }
+
+.mainFormacion__timelineWrapper {
+  padding: 10px 40px;
+  position: relative;
+  width: 51%;
+  box-sizing: border-box;
+  margin: 50px 0;
+  word-wrap: break-word; }
+  .mainFormacion__timelineWrapper:hover {
+    transition: all 0.5s;
+    transform: scale(1.03);
+    z-index: 1; }
+
+.mainFormacion__timelineWrapper::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 1px;
+  background-color: #430986;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: none; }
+
+.left {
+  left: 0; }
+
+.right {
+  left: 50%; }
+
+.right::after {
+  left: -10px; }
+
+.mainFormacion__timelineContent {
+  padding: 50px;
+  background-color: white;
+  border-radius: 4px; }
+
+.mainFormacion__timelineContent h2 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #430986;
+  letter-spacing: 1px; }
+
+.mainFormacion__timelineContent p {
+  color: #430986;
+  font-size: 1.7em;
+  margin-top: 0.7em; }
+
+.timeline__titles:hover, .h2--first:hover, .h2--second:hover, .h2--third:hover, .h2--fourth:hover {
+  font-weight: 600; }
+
+:hover.h2--first {
+  color: #c397f5; }
+
+:hover.h2--second {
+  color: #7a31ce; }
+
+:hover.h2--third {
+  color: #430986; }
+
+:hover.h2--fourth {
+  color: #230a4d; }
+
+.mainFormacion__timelineContent {
+  padding: 50px;
+  background-color: white;
+  border-radius: 4px; }
 
 .bodyTrabajos {
-  background-image: url("../img/gradient.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: linear-gradient(165deg, #380a94 0%, #5b26a6 20%, #6a1cd6 34%, #8747d5 50%, #bb5fa8 70%, #d18cb9 89%, #d9cdd9 100%); }
 
 .mainTrabajos__title {
   display: flex;
@@ -164,21 +241,20 @@ form .btn:hover {
     box-shadow: 0 3px 10px #16082c; }
 
 .grid__title {
-  margin-top: 0.7rem;
-  font-size: 1rem;
-  color: white; }
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase; }
 
 .grid__description {
   width: 90%;
-  margin-top: 0.2rem;
-  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  font-size: 1rem;
   font-weight: 200;
   color: white; }
 
 .bodySobreMi {
-  background-image: url("../img/gradient.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: linear-gradient(165deg, #380a94 0%, #5b26a6 20%, #6a1cd6 34%, #8747d5 50%, #bb5fa8 70%, #d18cb9 89%, #d9cdd9 100%); }
 
 .mainSobreMi {
   display: flex;
@@ -207,12 +283,10 @@ form .btn:hover {
   .mainSobreMi__paragraph--highlight:hover {
     transition: all 0.5s;
     transform: scale(1.1);
-    color: #480892; }
+    color: #430986; }
 
 .bodyContacto {
-  background-image: url("../img/gradient2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: linear-gradient(56deg, #27046c 0%, #3b0e9c 14%, #5b26a6 32%, #8747d5 53%, #bb5fa8 70%, #d18cb9 89%, #d9cdd9 100%); }
 
 .mainContacto {
   display: flex;
@@ -222,19 +296,21 @@ form .btn:hover {
 .mainContacto__title {
   font-size: 4vw;
   font-weight: 600;
-  color: aliceblue;
-  margin-bottom: 1rem; }
+  color: #230a4d;
+  margin: 0 4vw 1rem 0; }
 
 .mainContacto__paragraph {
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-weight: 200;
   color: white;
-  width: 35vw; }
+  width: 25vw;
+  margin: 0 4vw 0 0; }
 
 .mainContacto__form {
   display: flex;
   flex-direction: column;
-  width: 35vw; }
+  width: 35vw;
+  margin-left: 2vw; }
 
 .mainContacto__label {
   font-size: 2vw;
@@ -261,9 +337,9 @@ form .btn:hover {
   align-self: flex-end;
   height: 7.5vh;
   width: 20vw;
-  border: 9px ridge #480892 66, 14, 163;
+  border: 9px ridge #430986 66, 14, 163;
   border-radius: 10px;
-  background-color: #16082c;
+  background-color: #230a4d;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2vw;
@@ -279,16 +355,19 @@ form .btn:hover {
   font-size: 1.4vw;
   color: white;
   border-top: solid 2px white; }
-  .footer__content .footer__name {
-    display: flex;
-    font-size: 1.5vh; }
-  .footer__content .footer__links {
-    display: flex;
-    justify-content: center; }
-    .footer__content .footer__links .footer__logo {
-      height: 3.5vh;
-      width: auto;
-      margin-left: 1vw; }
+
+.footer__name {
+  display: flex;
+  font-size: 1.5vh; }
+
+.footer__links {
+  display: flex;
+  justify-content: center; }
+
+.footer__logo {
+  height: 3.5vh;
+  width: auto;
+  margin-left: 1vw; }
 
 /*DESKTOP*/
 @media screen and (max-width: 1200px) {
@@ -307,7 +386,11 @@ form .btn:hover {
   /*formacion*/
   .mainFormacion__timeline {
     margin: 8rem 0 5rem 0;
-    width: 75vw; } }
+    width: 75vw; }
+  .mainFormacion__timelineContent h2 {
+    font-size: 1.2em; }
+  .mainFormacion__timelineContent p {
+    font-size: 1.2em; } }
 
 /*TABLET*/
 @media screen and (max-width: 768px) {
@@ -331,6 +414,16 @@ form .btn:hover {
     margin-top: 7vh; }
   .mainFormacion__image {
     width: 50vw; }
+  .mainFormacion__timelineContent h2 {
+    font-size: 1em; }
+  .mainFormacion__timelineContent p {
+    font-size: 1em; }
+  .mainFormacion__timelineContent {
+    padding: 30px; }
+  .left {
+    left: -74px; }
+  .mainFormacion__timelineWrapper {
+    width: 66%; }
   /*trabajos*/
   .mainTrabajos__title {
     font-size: 2.5rem; }
@@ -402,13 +495,14 @@ form .btn:hover {
   .mainFormacion__caption {
     font-size: 2.5vw;
     margin-top: 0.5rem; }
-  .mainFormacion__timeline {
-    display: none; }
-  .mainFormacion__timelineResponsive {
-    display: inline-block;
-    margin: 4rem 0 0 0;
-    width: 70vw;
-    height: auto; }
+  .mainFormacion__timelineContent h2 {
+    font-size: 0.9em; }
+  .mainFormacion__timelineContent p {
+    font-size: 0.8em; }
+  .mainFormacion__timelineContent {
+    padding: 15px; }
+  .mainFormacion__timelineWrapper {
+    width: 75%; }
   /*trabajos*/
   .mainTrabajos__title {
     font-size: 2rem; }
@@ -418,6 +512,8 @@ form .btn:hover {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .grid img:hover {
+    transform: scale(1.1); }
   .grid__description {
     font-size: 0.8rem; }
   /*sobre mi*/

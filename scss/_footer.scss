@@ -9,20 +9,20 @@
   font-size: 1.4vw;
   color: white;
   border-top: solid 2px white;
+}
 
-  .footer__name {
-    display: flex;
-    font-size: 1.5vh;
-  }
+.footer__name {
+  display: flex;
+  font-size: 1.5vh;
+}
 
-  .footer__links {
-    display: flex;
-    justify-content: center;
-    
-    .footer__logo {
-      height: 3.5vh;
-      width: auto;
-      margin-left: 1vw;
-    }
-  }
+.footer__links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  height: 3.5vh;
+  width: auto;
+  margin-left: 1vw;
 }
