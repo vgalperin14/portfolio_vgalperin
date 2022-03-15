@@ -25,4 +25,9 @@
   height: 3.5vh;
   width: auto;
   margin-left: 1vw;
+  &:hover {
+    transition: all 0.2s;
+    transform: scale(1.08);
+    box-shadow: $sombra;
+  }
 }

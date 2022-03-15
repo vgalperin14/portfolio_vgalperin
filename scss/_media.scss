@@ -10,6 +10,14 @@
 
   /*trabajos*/
 
+  .mainTrabajos__title {
+    font-size: 4rem;
+  }
+
+  .mainTrabajos__subtitle {
+    font-size: 2rem;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -37,6 +45,14 @@
 
   .mainFormacion__timelineContent p{
     font-size: 1.2em;
+  }
+
+  .mainFormacion__timelineContent {
+    width: 32vw;
+  }
+  
+  .mainFormacion__timelineWrapper:nth-child(even) div {
+    left: -35vw; 
   }
 
 }
@@ -80,6 +96,11 @@
     width: 50vw;
   }
 
+  .mainFormacion__timeline {
+    position: relative;
+    left: -40vw;
+  }
+
   .mainFormacion__timelineContent h2 {
     font-size: 1em;
   }
@@ -87,19 +108,21 @@
   .mainFormacion__timelineContent p {
     font-size: 1em;
   }
-
-  .mainFormacion__timelineContent {
-    padding: 30px;
+   
+  .mainFormacion__timelineWrapper:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .mainFormacion__timelineWrapper:nth-child(even) div::before {
+    left: -15px;
+    transform: scalex(-1)
   }
 
-  .left {
-    left: -74px;
+  .mainFormacion__timelineWrapper div {
+    width: 71vw;
   }
-
-  .mainFormacion__timelineWrapper {
-    width: 66%;
-  }
-
+   
+  
   /*trabajos*/
 
   .mainTrabajos__title {
@@ -222,6 +245,10 @@
     margin-top: 0.5rem;
   }
 
+  .mainFormacion__timeline {
+    position: relative;
+    left: -79vw;
+  }
   
   .mainFormacion__timelineContent h2 {
     font-size: 0.9em;
@@ -231,14 +258,10 @@
     font-size: 0.8em;
   }
 
-  .mainFormacion__timelineContent {
-    padding: 15px;
-  }
-
   .mainFormacion__timelineWrapper {
-    width: 75%;
+    width: 1%;
+    margin-left: 69vw;
   }
-
 
   /*trabajos*/
 
@@ -279,12 +302,12 @@
   }
 
   .mainSobreMi__paragraph {
-    font-size: 5vw;
+    font-size: 4.7vw;
     width: 75vw;
   }
 
   .mainSobreMi__paragraph--highlight {
-    font-size: 5.5vw;
+    font-size: 5.2vw;
     margin-top: 3vh;
   }
 
