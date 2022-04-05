@@ -32,6 +32,10 @@
     font-size: 0.9rem;
   }
 
+  .grid__container {
+    width: 40vw;
+  }
+
   /*formacion*/
 
   .mainFormacion__timeline {
@@ -132,6 +136,10 @@
   .mainTrabajos__subtitle {
     font-size: 1.2rem;
     margin-bottom: 9vh;
+  }
+
+  .grid__container {
+    width: 39vw;
   }
 
   /*sobre mi*/
@@ -266,12 +274,15 @@
   /*trabajos*/
 
   .mainTrabajos__title {
-    font-size: 2rem;
+    font-size: 9vw;
+    justify-content: left;
+    margin-left: 11vw;
   }
 
   .mainTrabajos__subtitle {
-    font-size: 1rem;
-    margin-bottom: 5vh;
+    font-size: 4.5vw;
+    margin: 0 0 6vh 11vw;
+    justify-content: left;
   }
 
   .grid {
@@ -287,6 +298,10 @@
 
   .grid__description {
     font-size: 0.8rem;
+  }
+
+  .grid__container {
+    width: 83vw;
   }
 
 
